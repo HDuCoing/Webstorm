@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    /* CSS HEX */
+    --amazon: #4B7A54ff;
+    --star-command-blue: #0280BAff;
+    --blue-green: #059DBDff;
+    --sea-green-crayola: #18EABBff;
+    --zomp: #3A9E8Aff;
+
+    /* CSS HSL */
+    --amazon: hsla(131, 24%, 39%, 1);
+    --star-command-blue: hsla(199, 98%, 37%, 1);
+    --blue-green: hsla(190, 95%, 38%, 1);
+    --sea-green-crayola: hsla(167, 83%, 51%, 1);
+    --zomp: hsla(168, 46%, 42%, 1);
+
+    --secondary-color: var(--zomp);
+    --font-color: #131212;
+    --bg-color: #fff;
+    --heading-color: azure;
+
+}
+
+body {
+    font-family: sans-serif;
+    padding: 10px;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+body img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    float: bottom;
+}
+body img:hover{
+    border: 2px solid #ddd;
+}
+body .images{
+    width: 75%;
+    padding: 10px;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 60px;
+    text-align: center;
+    background-image: url("Photos/1592375589297.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-style: inset;
+    border-width: 2px;
+    border-color: var(--star-command-blue);
+
+
+}
+
+.header h1 {
+    font-size: 30px;
+    opacity: 95%;
+    color: var(--heading-color);
+}
+.header p {
+    font-size: 15px;
+    color: var(--heading-color);
+    opacity: 95%;
+}
+.header img{
+    border-style: none;
+    border-width: 0px;
+}
+
+/*
+Navigation
+ */
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.topnav {
+    overflow: hidden;
+    background-color: var(--secondary-color);
+    border-style: inset;
+    border-width: 2px;
+    border-color: var(--star-command-blue);
+    opacity: 90%;
+
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: var(--bg-color);
+    padding: 20px 12px;
+}
+
+.topnav a:hover {
+    background-color: var(--bg-color);
+    color: var(--blue-green);
+    transition: ease-in;
+    opacity: 60%;
+    transition-duration: 0.5s;
+}
+
+/*
+Dropdown navigation
+ */
+.dropdown {
+    float: left;
+    overflow: hidden;
+
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: var(--bg-color);
+    padding: 20px 10px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    text-decoration: underline;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--zomp);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: var(--bg-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--bg-color);
+    color: var(--blue-green);
+    transition: ease-in;
+    opacity: 60%;
+    transition-duration: 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.leftcolumn {
+    float: left;
+    width: 70%;
+    background-color: var(--zomp);
+}
+
+.rightcolumn {
+    float: right;
+    width: 25%;
+    background-color: var(--secondary-color);
+    padding-left: 10px;
+}
+
+/*
+Area for articles
+ */
+.card {
+    background-color: var(--bg-color);
+    padding: 20px;
+    margin-top: 20px;
+    border-style: groove;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*
+Footer
+*/
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: var(--secondary-color);
+    margin-top: 20px;
+    color: var(--bg-color);
+    border-style: inset;
+    border-width: 2px;
+    border-color: var(--star-command-blue);
+}
+.footer a {
+    color: var(--bg-color);
+}
+.footer img {
+    border-style: none;
+    border-width: 0px;
+}
+
+/*
+Flex boxes
+ */
+.flex-container {
+    display: flex;
+    background-color: var(--amazon);
+    opacity: 90%;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 13px;
+}
+* {box-sizing: border-box}
+
+.container {
+    padding: 16px;
+}
+/*
+Tour registration
+ */
+input[type=text], input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    background-color: var(--amazon);
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity:1;
+}
+
+a {
+    color: var(--blue-green);
+
+}
+
+/* breadcrumb */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: var(--bg-color);
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+/*
+Table
+ */
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+th, td {
+    text-align: center;
+    padding: 16px;
+}
+
+th:first-child, td:first-child {
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+/*
+Contact form
+ */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+input[type=submit] {
+    background-color: var(--zomp);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    opacity: 50%;
+}
+.container {
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    padding: 20px;
+}
+@media screen and (max-width: 800px) {
+    body, img, .flex-container{
+        width: 100%;
+    }
+}

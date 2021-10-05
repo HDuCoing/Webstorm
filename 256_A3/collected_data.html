@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collected Data</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="contents" href="Tours.html">
+</head>
+<body>
+<div class="topnav">
+    <a href="Home.html">Home</a>
+</div>
+<div class="flex-container">
+    <! Collected Date -->
+    <div>
+        <button type="button" onclick="showStorage()">Display Submissions</button>
+        <button type="button" onclick="clearStorage()">Clear Form</button>
+        <p id="storage"></p>
+    </div>
+</div>
+</body>
+<style>
+    .flex-container > div {
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 20px;
+        font-size: 20px;
+    }
+    * {box-sizing: border-box}
+
+    .container {
+        padding: 16px;
+    }
+</style>
+<script>
+    var timeAndDate = "Date: " + new Date().getDay() + ", " + new Date().getMonth() + ", " + new Date().getFullYear() + ": " + new Date().getHours() + ":" + new Date().getMinutes();
+    function clearStorage(){
+        localStorage.clear();
+        document.getElementById("storage").innerHTML = "";
+    }
+    function showStorage(){
+        var fname = localStorage.getItem("firstname");
+        var lname = localStorage.getItem("lastname");
+        var email = localStorage.getItem("email");
+        document.getElementById("storage").innerHTML = ' Name: ' +
+            fname.value
+            + ' ' + lname.value
+            + " " + 'Email: ' + email.value + " " + timeAndDate;
+
+    }
+</script>
+</html>

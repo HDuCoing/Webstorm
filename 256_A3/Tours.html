@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NZ Travel - Tours</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+</head>
+<body>
+<! Navigation bar -->
+<nav class="sticky">
+    <div class="topnav">
+        <a href="Home.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Travel
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Food%20and%20Wine.html">Food and Wine</a>
+                <a href="Sight-Seeing.html">Sight-Seeing</a>
+                <a href="Skiing%20and%20Snowboarding.html">Skiing and Snowboarding</a>
+                <a href="Beaches.html">Beaches</a>
+                <a href="Hiking.html">Hiking</a>
+            </div>
+        </div>
+        <a href="Tours.html">Tours</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+</nav>
+<div class="header">
+    <a href="Home.html">
+        <img src="Photos/kiwi.png" alt="kiwi" style="width:50px;height:50px;"></a>
+    <h1>Aotearoa Travel</h1>
+    <p>Your guide to New Zealand.</p>
+</div>
+
+<ul class="breadcrumb">
+</ul>
+<div class="row">
+            <div class="flex-container">
+                <div><h3>Tiritiri-Matangi Island:</h3>
+                    <h4>Wattle Track</h4>
+                    This walk goes through replanted bush where the canopy is still low, which means you have a good chance of seeing birds close up.
+                    There are water troughs and sugar water feeding stations, which are popular spots with the birdlife.
+                <br>
+                    <br>
+                    <h4>Moana Rua Route/Coast to Coast</h4>
+                This walk requires a reasonable level of fitness due to some steep sections along the way. It showcases the island’s position in the Hauraki Gulf, taking in both coastlines as well as replanted bush.
+                    <img src="Photos/Tiritiri-Matangi-Island.jpeg" alt="tiritiri" style="width:300px;height:200px;">
+                </div>
+                <div><h3>North Island Adventure</h3>
+                    <h4>Hobbiton, Waitomo Glowworm Caves and the Tongariro Crossing</h4>
+                    You will visit Coromandel, Rotorua, Taupō, and Wellington, with the option to visit Hobbiton, Waitomo Glowworm Caves and the Tongariro Crossing along the way. You can choose to travel from Auckland through to Wellington, or take the reverse itinerary.
+                    <br>
+                    As with all our tours, we do include a few 'must-do' events including a Māori cultural night and traditional Māori hāngī dinner cooked in an underground oven.
+                    In this New Zealand North Island tour package, from bungy jumping and white water rafting to canopy forest zipline tours and scenic flights. None of these are compulsory; just add the ones you want.
+                    <img src="Photos/NewZealand-9-web.png" alt="northisland" style="width:300px;height:200px;">
+                </div>
+                <div><h3>South Island Adventure</h3>
+                    <h4>Relax in hot pools, eat and drink like a local, and more!</h4>
+                    You’ll have the opportunity to swim, kayak, skydive, hike, horse ride, see kiwis (and whales and dolphins), relax in hot pools, eat and drink like a local, and more!
+                    But only if you want to; this is your trip. It’s designed to be flexible – we include some high-end essentials, but let you make the call on what kind of activities appeal to you. You can pre-book the things you are certain you want to do before the trip starts – and then add more on while you’re on tour.
+                    <br>
+                    We'll fill your days with the best things to see and do in the South Island and also give you a great insight into New Zealand life and culture. At the end of the day, you can relax in comfortable 3–4 star accommodation to ensure you have a great night’s sleep ready for the following day’s activities.
+                    <img src="Photos/south-island.jpeg" alt="southisland" style="width:300px;height:200px;">
+                </div>
+            </div>
+        <div class="card">
+            <table class="features">
+                <tr>
+                    <th style="width:50%">Features</th>
+                    <th>No Tour</th>
+                    <th>Tour</th>
+                </tr>
+                <tr>
+                    <td>History and Information</td>
+                    <td>X</td>
+                    <td>√</td>
+                </tr>
+                <tr>
+                    <td>Food and Shelter</td>
+                    <td>X</td>
+                    <td>√</td>
+                </tr>
+            </table>
+
+            <form>
+                <div class="container">
+                    <h1>Register:</h1>
+                    <p>Please fill in this form to book a guided tour.</p>
+                    <hr>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                    <label for="firstname"><b>First Name</b></label>
+                    <input type="text" placeholder="Enter First Name" name="firstname" id="firstname" required>
+                    <label for="lastname"><b>Last Name</b></label>
+                    <input type="text" placeholder="Enter Last Name" name="lastname" id="lastname" required>
+
+                    <label><b>Tour: </b></label>
+                    <select name="tours" id="tours">
+                        <option value="tiritiri">Tiritiri Matangi Island Tour - $300/pp</option>
+                        <option value="northisland">North Island Adventure - $475/pp</option>
+                        <option value="southisland">South Island Adventure - $475/pp</option>
+                    </select>
+                    <div>
+                        <br>
+                    </div>
+                    <p>By booking online you agree to our <a href="#">Terms & Privacy</a>.</p>
+                    <button type="submit" onclick="storeInfo()" class="registerbtn">Register</button>
+                </div>
+            </form>
+            <div id="map"></div>
+            <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly&channel=2"
+                    async
+            ></script>
+    </div>
+    </div>
+</div>
+<div class="footer">
+    <p>AotearoaTravel.co.nz</p>
+    <p>Copyright 2021 - Last updated September</p>
+    <a href="mailto:contact@AotearoaTravel.co.nz">Email</a>
+    <p>Phone: 555-123-4567</p>
+    <img src="Photos/instagram.png" alt="Instagram" style="width:25px;height:25px;">
+    <img src="Photos/facebook.png" alt="Facebook" style="width:25px;height:25px;">
+    <img src="Photos/twitter.png" alt="Twitter" style="width:25px;height:25px;">
+    <img src="Photos/telegram.png" alt="Email" style="width:25px;height:25px;">
+</div>
+
+<style>
+    #map {
+        height: 400px;
+        width: 100%;
+    }
+</style>
+<script>
+
+    // create map
+    function initMap() {
+        const uluru = { lat: -41.2988403, lng: 174.7772335 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: uluru,
+        });
+        const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+        });
+    }
+    function storeInfo() {
+        const name = document.getElementById('firstname');
+        const lname = document.getElementById('lastname');
+        const email = document.getElementById('email');
+        localStorage.setItem("firstname", JSON.stringify(name.value));
+        localStorage.setItem("lastname", JSON.stringify(lname.value));
+        localStorage.setItem("email", JSON.stringify(email.value));
+    }
+
+</script>
+<script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBB1AZJnX4ac57GVXjIqtvHG6VHhbGz0EY&callback=initMap">
+</script>
+
+</body>
+</html>
